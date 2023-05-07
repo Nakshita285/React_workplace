@@ -3,6 +3,7 @@ import "./style.css";
 import auth from '../config/firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
+
 const SignUp = () => {
     let [userName, setUsername] = useState("");
     let [email, setEmail] = useState("");
@@ -15,9 +16,10 @@ const SignUp = () => {
             let response = await createUserWithEmailAndPassword(auth, email, password);
             console.log(response);
         }catch(error){
+            
             const errorMessage = error.message;
             setErrMessage(errorMessage);
-            console.log("Error Message"+errorMessage);
+            console.log("Error Message:" + errorMessage);
         }
     }
 
