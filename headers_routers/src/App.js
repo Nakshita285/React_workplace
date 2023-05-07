@@ -8,15 +8,19 @@ import {Routes, Route } from 'react-router-dom';
 
 class App extends Component {
   state = {  } 
+
+
   render() { 
+    
     return (
       <div className = "App">
-      <Headerr></Headerr>
-          <Routes>
-            <Route exact path='/' element={ <Home></Home> }></Route>
-            <Route exact path='/about' element={ <About></About> }></Route>
-            <Route exact path='/settings' element={ <Settings></Settings> }></Route>
-          </Routes>
+      <Routes>
+        <Route path="/" element ={<Headerr />} >
+          <Route  path ='/home' element ={<Home />} />
+          <Route  path='/about' element={ <About /> } />
+          <Route  path='/settings' element={<Settings />} />
+        </Route>
+      </Routes>
       </div>
     );
   }

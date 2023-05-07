@@ -1,0 +1,37 @@
+.heading {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 45px;
+}
+
+.inputs {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25rem;
+    height: 24rem;
+    box-shadow: 1px 1px 6px lightgrey;
+}
+.inputType {
+    width: 250px;
+    height: 35px;
+    font-size: 12px;
+    margin: 16px;
+}
+
+.loginButton, .signupButton {
+    height: 46px;
+    width: 105px;
+    padding: 10px;
+    margin: 33px;
+    font-size: 20px;
+    font-weight: 700;
+    background: darkred;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 1px 1px 5px white;
+}
